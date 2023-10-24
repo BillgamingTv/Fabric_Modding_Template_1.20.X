@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "questionablesubstances",
+	"version": "${version}",
+	"name": "QuestionableSubstances",
+	"description": "This mod adds some magic things to your game.",
+	"authors": [
+		"Bill617"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/questionablesubstances/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bill617.qs.QuestionableSubstances"
+		],
+		"client": [
+			"net.bill617.qs.QuestionableSubstancesClient"
+		],
+		"fabric-datagen": [
+			"net.bill617.qs.QuestionableSubstancesDataGenerator"
+		]
+	},
+	"mixins": [
+		"questionablesubstances.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
